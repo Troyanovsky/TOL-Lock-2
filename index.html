@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="css/main.css"></link>
+  <head>
+      <script type="text/javascript" src="./jquery-1.10.1.js"></script>
+  </head>
+  <body>
+    <div id="page1">
+
+      <div class="rect1"></div>
+      <div class="intro1">
+        Learn the mechanism of a pin tumbler lock through cooperative learning
+      </div>
+   
+      <label class="intro2">
+       <span> The flow of the module </span>
+        <ol>
+          <li>Individual Learning</li>
+          <li>Discuss and share</li>
+          <li>Summative Assessment</li>
+          <li>Peer-evaluation</li>
+        </ol>
+               <button class="button1" onclick="myFunction1()">Start the course</button>
+
+      </label>
+
+      <div class="attention">ATTENTION</div>
+      <img class="pika1" src="assets/Pikachuu.png">
+
+      <div class="l4" ></div>
+      <div class="l3" ></div>
+      <div class="l2" ></div>
+      <div class="l1" ></div>
+        
+      <label class="lineframe notes"><span>1. </span>You are responsible for teaching your peer and your peer is responsible for teaching you.<br><br><span>2. </span>The success and grade of your learning depends on each other. Your final grade will be 80% of your final quiz and 20% of your teaching quality peer-evaluation.</label>
+
+    </div>
+
+    <div id="page2" class="show-p2">
+      <label class="b2-1">Let’s see an introduction video together...</label>
+      <iframe class="b2-video" id="youtube" width="1110" height="561" src="https://www.youtube.com/embed/isFH39jZ4C4" frameborder="0" allowfullscreen></iframe>
+      <!-- <div class="youtubeposition"><div id="player"></div></div> -->
+      <button class="button4" id="button4" onclick="myFunction2()">Next</button>
+    </div>
+
+    <div id="page3">
+      <label class="b3-1">Team Assignment</label>
+      <div class="b3-rect"></div>
+      <img class="b3-img" src="assets/box_1star.png">
+      <div class="b3-2">Now that you’ve finished the first part. Next, you will either watch a video regarding the lock components or the lock mechanisms.</div>
+      <button class="btn3" onclick="myFunction3()">Next</button>
+    </div>
+
+    <div id="page4">
+      <label class="b3-1">Please choose the team you’re assigned to</label>
+      <img class="b4-bg" src="assets/background.png">
+      <div class="b4-select">
+      </div>
+      <div class="b4-1-container">
+
+            <img src="assets/pika_frnd_2.png" class="b4-avatar1">
+            <div class="overlay overlayFade" onclick="myFunction4()">
+                <div class="text">Team Bulby</div>
+            </div>
+        </div>
+      <div class="b4-2-container">
+            <img class="b4-avatar2" src="assets/pikachuu_s friend.png">
+            <div class="overlay overlayFade" onclick="myFunction41()">
+                <div class="text">Team Eevie</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page5">
+      <div id="page51">
+        <label class="b5-1">Components of a pin tumbler lock</label>
+        <iframe class="b5-video" id="youtube" width="1110" height="561" src="https://www.youtube.com/embed/rMueFZec-Q4" frameborder="0" allowfullscreen></iframe>
+        <img class="b5-img" src="assets/pikachuu_s friend.png">
+      </div>
+  
+      <div id="page52">
+      <label class="b5-1">Mechanisms of a pin tumbler lock</label>
+      <iframe class="b5-video" id="youtube" width="1110" height="561" src="https://www.youtube.com/embed/H1I8dECi6Sw" frameborder="0" allowfullscreen></iframe>
+      <img class="b5-img" src="assets/pika_frnd_2.png">
+    </div>
+     <button class="btn3" onclick="myFunction5()">Next</button>
+    </div>
+    
+
+    <div id="page6">
+      <label class="b3-1">Discussion Time</label>
+       <div class="b3-rect"></div>
+      <img class="b3-img" src="assets/box_2stars.png">
+      <div class="b6-1">Now, share what you’ve learned with your peer.<br></div>
+      <div class="b6-comp-1">FOR COMPONENTS:</div>
+      <div class="b6-comp">Explain the following components: case, plug, keyway, spring, driver pin, key pin, and shear line.<br>Where they are and how do they look like?<br>Explain common misconceptions about the inside of the lock.</div>
+      <div class="b6-mech-1">FOR MECHANISMS</div>
+      <div class="b6-mech">Explain what has to match for a key and a lock.<br>Explain <span>where</span> the pins must line up for the lock to turn.<br>Explain <span>why</span> the pins must line up for the lock to turn. Show/draw an example of a wrong key.</div>
+
+
+      <div class="b6-timer">Remaining time: <br><span id="time">04:48</span></div>
+   
+
+      <button class="btn3" onclick="myFunction6()">Next</button>
+    </div>
+
+
+    <div id="page7">
+      <label class="b3-1">Quiz Time</label>
+      <div class="b3-rect"></div>
+
+      <iframe class="b7-rect" name="opinionstage-widget" src="https://www.opinionstage.com/api/v1/widgets/637297/iframe?em=1" width="100%" height="70%" scrolling="yes" style="border: none;" frameBorder="0" allow="fullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          <button class="btn3" onclick="myFunction7()">Next</button>
+    </div>
+
+    <div id="page8">
+      <div class="b3-rect"></div>
+      <label class="b3-1">Evaluate your peer based on how they taught you objectively</label>
+          <iframe class="b7-rect" name="opinionstage-widget" src="https://www.opinionstage.com/api/v1/widgets/637311/iframe?em=1" width="100%" height="70%" scrolling="no" style="border: none;" frameBorder="0" allow="fullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          <img class="b8-img" src="assets/pikachuu2.png">
+          <button class="btn3" onclick="myFunction8()">Done</button>
+     </div>
+
+     
+    <div id="page9">
+      <label class="b3-1">Course Complete</label>
+      <div class="b3-rect"></div>
+      <img class="b3-img" src="assets/box_3stars.png">
+      <div class="b9-1"><span>Congratulations!</span><br> You have completed this course.</div>
+    </div>
+    
+      <div class="footer">
+        <p class="copyright">&copy; 2020. Created by Chuyao Hua, Guodong Zhao &amp; Nabeeha Fatima<br> </p>
+      </div>
+        
+       
+   
+
+
+
+    <script>
+      var flag = 1, html1, html2, counter=0;
+      var slider = document.getElementById("myRange");
+      var texta = document.getElementById("hypothesis");
+      var output = document.getElementById("showvalue");
+      output.innerHTML = slider.value;
+      texta.oninput = function()
+      {
+        console.log("dddd");
+        document.getElementById('button7').style.backgroundColor = "#FFC107";
+        document.getElementById('button7').style.color = "#FFFFFF";
+        document.getElementById("button7").disabled = false;
+      }
+
+      
+
+      //page action
+      function myFunction1() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "flex";
+        flag=0;
+      }
+
+      function myFunction2() {
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "flex";
+      }
+
+      function myFunction3() {
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "flex";
+      }
+      function myFunction4() {
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page51").style.display = "none";
+        document.getElementById("page5").style.display = "flex";
+      }
+
+      function myFunction41() {
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "flex";
+        document.getElementById("page52").style.display = "none";
+      }
+      function myFunction5() {
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("page51").style.display = "none";
+        document.getElementById("page52").style.display = "none";
+        document.getElementById("page6").style.display = "flex";
+      }
+      function myFunction6() {
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "flex";
+      }
+      function myFunction7() {
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "flex";
+        flag=0;
+      }
+      function myFunction8() {
+        document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "flex";
+      }
+      function myFunction9() {
+        document.getElementById("page8").style.display = "none";
+        document.getElementById("page4").style.display = "flex";
+        flag=0;
+      }
+      function myFunction10() {
+        location.reload();
+      }
+      
+
+
+      // 1. Youtube video starts here
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var videoIDs = [
+        'isFH39jZ4C4',
+        'rMueFZec-Q4',
+        'H1I8dECi6Sw'
+    ];
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player, currentVideoId = 0;
+      var player1, currentVideoId = 1;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '500px',
+          width: '100%',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+
+        player1 = new YT.Player('player', {
+          height: '500px',
+          width: '100%',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        //event.target.loadVideoById(videoIDs[currentVideoId]);
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      //var done = false;
+      function onPlayerStateChange(event) {
+        //if (event.data == YT.PlayerState.PLAYING && !done) {
+          //setTimeout(pauseVideo, 6000);
+          //done = true;
+        //}
+        if(event.data === 0) {
+          if (currentVideoId==1) {
+            document.getElementById("button4").style.display = "block";
+          }
+          if (currentVideoId==2) {
+            document.getElementById("button4").style.display = "block";
+          }
+          if (currentVideoId==3) {
+            document.getElementById("button4").style.display = "block";
+          }
+          
+        }
+      }
+      setInterval(function() {
+          if(flag==0) {
+              // Button is hidden
+              if (currentVideoId < videoIDs.length) {
+                player.loadVideoById(videoIDs[currentVideoId]);
+              }
+              currentVideoId++;
+              flag=1;
+          }
+         
+      }, 100);
+    </script>
+
+    <!-- //timer -->
+      <script type="text/javascript">
+
+
+      function startTimer(duration, display) {
+          var timer = duration, minutes, seconds;
+          setInterval(function () {
+              minutes = parseInt(timer / 60, 10)
+              seconds = parseInt(timer % 60, 10);
+
+              minutes = minutes < 10 ? "0" + minutes : minutes;
+              seconds = seconds < 10 ? "0" + seconds : seconds;
+
+              display.text(minutes + ":" + seconds);
+
+              if (--timer < 0) {
+                  timer = duration;
+              }
+          }, 1000);
+      }
+
+      jQuery(function ($) {
+          var fiveMinutes = 60 * 5,
+              display = $('#time');
+          startTimer(fiveMinutes, display);
+      });
+
+
+  //]]></script>
+ </body>
+</html>
