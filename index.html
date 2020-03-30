@@ -98,11 +98,9 @@
       <div class="b6-mech-1">FOR MECHANISMS</div>
       <div class="b6-mech">Explain what has to match for a key and a lock.<br>Explain <span>where</span> the pins must line up for the lock to turn.<br>Explain <span>why</span> the pins must line up for the lock to turn. Show/draw an example of a wrong key.</div>
 
+      <div class="b6-timer" id="countdown">Remaining time: <br></div>
 
-      <div class="b6-timer">Remaining time: <br><span id="time">04:48</span></div>
-   
-
-      <button class="btn3" onclick="myFunction6()">Next</button>
+      <div class="btn4" id="download" onclick="myFunction6()">Next</div>
     </div>
 
 
@@ -290,33 +288,32 @@
     </script>
 
     <!-- //timer -->
-      <script type="text/javascript">
+      <script type="text/javascript">//<![CDATA[
 
 
-      function startTimer(duration, display) {
-          var timer = duration, minutes, seconds;
-          setInterval(function () {
-              minutes = parseInt(timer / 60, 10)
-              seconds = parseInt(timer % 60, 10);
+        window.onload = function() {
+            var countdownElement = document.getElementById('countdown'),
+                downloadButton = document.getElementById('download'),
+                seconds = 30,
+                second = 0,
+                interval;
 
-              minutes = minutes < 10 ? "0" + minutes : minutes;
-              seconds = seconds < 10 ? "0" + seconds : seconds;
+            downloadButton.style.display = 'none';
 
-              display.text(minutes + ":" + seconds);
+            interval = setInterval(function() {
+                countdownElement.firstChild.data = 'Remaining time: '  + (seconds - second) + ' seconds';
+                if (second >= seconds) {
+                    downloadButton.style.display = 'block';
+                    clearInterval(interval);
+                }
 
-              if (--timer < 0) {
-                  timer = duration;
-              }
-          }, 1000);
-      }
-
-      jQuery(function ($) {
-          var fiveMinutes = 60 * 5,
-              display = $('#time');
-          startTimer(fiveMinutes, display);
-      });
+                second++;
+            }, 1000);
+        }
 
 
-  //]]></script>
+          //]]></script>
+
+
  </body>
 </html>
