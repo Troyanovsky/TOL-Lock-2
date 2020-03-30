@@ -1,2 +1,3 @@
-# TOL_Lock_CooperativeLearning
-TOL project 2 - How Locks work
+# TOL Project 2 - Cooperative Learning
+
+[How do Locks Work?](https://nhaque.github.io/TOL-Lock-2/index.html)
