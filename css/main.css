@@ -481,6 +481,8 @@ body {
 
   font-family: OpenSans-Bold;
   font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
   text-align: center;
 
   color: #000000;
@@ -935,6 +937,29 @@ body {
     /* identical to box height */
     text-align: center;
   }
+
+  .btn4 {
+    /* Group 6 */
+    position:absolute;
+    width: 380px;
+    height: 53px;
+    left: 525px;
+    top: 830px;
+    background: #F4C042;
+    padding: 4px 40px 4px 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: OpenSans-bold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #fff;
+    display: none;
+    /* identical to box height */
+    text-align: center;
+  }
+
 
   .button-clean{
     border: 2px solid #fff;
